@@ -1,0 +1,15 @@
+CALCULHON PWA - PROTOTIPO 0.1
+
+ATENCIÓN: este proyecto NO calcula automáticamente los conceptos del libro CALCULHON.xls.
+Sus bases se introducen manualmente. No usar para liquidaciones oficiales.
+
+PUBLICAR GRATIS EN GITHUB PAGES:
+1. Abre github.com y crea un repositorio nuevo PUBLIC llamado CALCULHON-PWA.
+   No subas el fichero Excel ni documentos privados. Únicamente estos siete archivos públicos.
+2. En la pestaña Code, usa Add file > Upload files para subir directamente todos los archivos de esta carpeta, incluidos index.html, app.js, styles.css, sw.js, manifest.webmanifest, icon-192.png, icon-512.png. No subas la carpeta contenedora como una subcarpeta del repositorio.
+3. Pulsa Commit changes.
+4. Abre Settings > Pages. En Build and deployment selecciona Deploy from a branch, Branch main y / (root). Pulsa Save.
+5. Espera a que GitHub publique el sitio. Vuelve a Settings > Pages para obtener la URL que termina en github.io/CALCULHON-PWA/.
+6. Abre esa URL en Chrome para Android. Menú tres puntos > Instalar aplicación (o Añadir a pantalla de inicio, según Chrome). Primero visita la página con Internet y vuelve a abrirla una vez para probar sin Internet.
+
+Guardado: el botón Guardar almacena los campos solo en el navegador del dispositivo mediante localStorage. No hay sincronización ni copia externa. Evita incluir datos personales/confidenciales en repositorios públicos. No borres datos del navegador si quieres conservar la simulación.
