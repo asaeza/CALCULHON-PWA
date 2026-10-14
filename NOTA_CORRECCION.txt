@@ -1,0 +1,15 @@
+CALCULHON v0.9.1 - corrección de Seguridad y Salud
+
+La extracción original del modelo omitió las fórmulas de AC139:AC158 de CALCULHON.xlsx. Se han restaurado exactamente desde el libro.
+
+CASO DE CONTROL (captura del usuario): H14=14, H15=11, H18=186730, H17=163, H22=100%, F42=4, H13=9.77.
+F32 = 4873,653 (4.873,65 euros)
+F37 = 974,7306 (974,73 euros)
+F49 = 1239,8872 (1.239,89 euros)
+
+CASO PREVIO: H14=11, H15=31, H18=45000, H17=110, H22=100%, F42=5.
+F32=4680, F37=No Aplicable, F49=414.
+
+AVISO: Se han detectado otras 68 fórmulas auxiliares sustituidas por 0 en la extracción histórica. No se han modificado en esta reparación focalizada; es preciso auditarlas antes de dar por validado el conjunto de casos.
+
+Para actualizar PWA de GitHub: subir los archivos de la carpeta raíz del ZIP a CALCULHON-PWA, sustituyendo los anteriores. sw.js tiene nuevo identificador de caché.
