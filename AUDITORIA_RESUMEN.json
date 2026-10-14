@@ -1,0 +1,35 @@
+{
+  "fecha": "2026-10-14",
+  "combinaciones": 1530,
+  "intervenciones": 51,
+  "obras": 30,
+  "porSalida": {
+    "F32": {
+      "numerico": 888,
+      "texto": 414,
+      "error": 228,
+      "no_finito": 0
+    },
+    "F37": {
+      "numerico": 36,
+      "texto": 1494,
+      "error": 0,
+      "no_finito": 0
+    },
+    "F49": {
+      "numerico": 1377,
+      "texto": 153,
+      "error": 0,
+      "no_finito": 0
+    },
+    "F58": {
+      "numerico": 0,
+      "texto": 1530,
+      "error": 0,
+      "no_finito": 0
+    }
+  },
+  "errorPorTipo": {
+    "Referencia de Excel incorrecta: #REF!": 228
+  }
+}

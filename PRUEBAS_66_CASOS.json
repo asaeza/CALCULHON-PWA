@@ -1,0 +1,530 @@
+[
+  {
+    "intervencion": 11,
+    "obra": 11,
+    "F32": 8760,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 11,
+    "obra": 21,
+    "F32": 8760,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 11,
+    "obra": 31,
+    "F32": 15600.000000000002,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 11,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 11,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 11,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 11,
+    "F32": 6132,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 21,
+    "F32": 6132,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 31,
+    "F32": 10920.000000000002,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 12,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 11,
+    "F32": 2628,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 21,
+    "F32": 2628,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 31,
+    "F32": 4680,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 13,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 11,
+    "F32": 3914.9999999999995,
+    "F37": 783,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 21,
+    "F32": 4698,
+    "F37": 939.6,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 31,
+    "F32": 4698,
+    "F37": 939.6,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 14,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 11,
+    "F32": 8760,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 21,
+    "F32": 8760,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 31,
+    "F32": 15600.000000000002,
+    "F37": 587.1888259829553,
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 15,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 11,
+    "F32": 2628,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 21,
+    "F32": 2628,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 31,
+    "F32": 4680,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 16,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 11,
+    "F32": 3914.9999999999995,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 21,
+    "F32": 587.1888259829553,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 31,
+    "F32": 587.1888259829553,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 17,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 11,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 21,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 31,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 71,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 72,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 31,
+    "obra": 91,
+    "F32": "20% Dirección",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 11,
+    "F32": 704.6265911795464,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 21,
+    "F32": 704.6265911795464,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 31,
+    "F32": 704.6265911795464,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 41,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 11,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 21,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 31,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 71,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 72,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 76,
+    "obra": 91,
+    "F32": 293.09999999999997,
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 11,
+    "F32": "Ver T.Terreno",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 21,
+    "F32": "Ver T.Terreno",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 31,
+    "F32": "Ver T.Terreno",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 71,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 72,
+    "F32": "ERROR: Referencia de Excel incorrecta: #REF!",
+    "F37": "No Aplicable",
+    "F49": 180.30363131513468,
+    "F58": "No aplicable"
+  },
+  {
+    "intervencion": 92,
+    "obra": 91,
+    "F32": "Ver Derribo",
+    "F37": "No Aplicable",
+    "F49": " ",
+    "F58": "No aplicable"
+  }
+]

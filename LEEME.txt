@@ -1,0 +1,4 @@
+CALCULHON Honorarios v0.8
+Cambios exclusivamente de denominaciones solicitadas en botón y resultados. Las fórmulas y reglas de cálculo no se han modificado.
+Versión en revisión: los cálculos todavía no están validados frente al libro original.
+Para GitHub Pages, cargar el contenido de esta carpeta en la raíz del repositorio; una vez publicado, recargar la página para actualizar la caché de la PWA.

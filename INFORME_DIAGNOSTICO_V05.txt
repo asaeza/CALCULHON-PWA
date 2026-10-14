@@ -1,0 +1,30 @@
+CALCULHON · REVISIÓN DE DEPENDENCIAS (v0.5)
+Fecha: 14/10/2026
+
+FUENTE: archivo CALCULHON.xlsx aportado por el usuario; modelo extraído de 414 fórmulas.
+
+1. HALLAZGO PRINCIPAL
+La cabecera original del Excel dice «CALCULO DE CUOTAS Y GASTOS COLEGIALES» y contiene partidas de costes profesionales, tasas, referencias a MUSAAT, visado y registro. No se ha demostrado que las cifras de F32 correspondan a honorarios libremente pactables ni que constituyan una tarifa profesional actual. Por tanto, se retira la atribución inequívoca de esos importes a «honorarios» en la cabecera de la interfaz.
+
+2. CUATRO FÓRMULAS CON #REF! YA PRESENTES EN EL ORIGINAL
+N32: =IF(AND(OR(H15=91,H15=92,H15=93),E53<1),"Ver Derribo",IF(AND(H15>70,H15<77),#REF!,...))
+- El error se activa por la rama de tipo de obra 71-76, después de comprobar el caso de demolición.
+- N32 es una dependencia del resultado F32, así como de H32, F33 y H33.
+- No se dispone de la referencia perdida para reconstruir esa rama sin especular.
+
+N212: =#REF!*0.16
+P212: =#REF!+N212
+P214: =#REF!
+- Afectan a la cadena de cálculo de P216, independiente de la dependencia inmediata F32/N32.
+- Deben corregirse con información del autor o una versión funcional anterior del libro.
+
+3. OTRAS CUESTIONES DE VALIDACIÓN
+- Las 1.530 pruebas previas eran de cobertura de ramas, no contrastes de cuantías con Excel.
+- El evaluador JavaScript no reproduce todas las reglas de coerción, precisión y evaluación de Excel; la coincidencia no está acreditada.
+- Se ha añadido bloqueo de entradas principales nulas para evitar divisiones indeterminadas.
+- No usar los importes para presupuestos, honorarios profesionales ni facturas.
+
+4. REQUISITO PARA CONTINUAR CON HONORARIOS REALES
+Es imprescindible aclarar qué hojas o fórmulas del modelo corresponden al cálculo de honorarios, y obtener casos testigo de Excel o una versión original sin referencias rotas.
+
+ARCHIVO DE DETALLE: DEPENDENCIAS_ERRORES.json (mapa de dependencias calculado automáticamente).

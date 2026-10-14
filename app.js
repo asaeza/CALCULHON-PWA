@@ -1,13 +1,27 @@
 'use strict';
-const form=document.getElementById('form'),result=document.getElementById('result'),message=document.getElementById('message');
-const keys=['descripcion','promotor','intervencion','tipo_obra','superficie_m2','pem','participacion','forma_tramitacion','base_intervencion','base_calidad','base_seguridad','gastos_colegiales','prima_rc','iva','retencion'];
-const fmt=new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'});
-function num(value,label){let v=String(value).trim().replace(/\s/g,'');if(v.includes(',')&&v.includes('.')){v=v.lastIndexOf(',')>v.lastIndexOf('.')?v.replace(/\./g,'').replace(',','.'):v.replace(/,/g,'')}else if(v.includes(',')){v=v.replace(',','.')}else if(/^\d{1,3}(\.\d{3})+$/.test(v)){v=v.replace(/\./g,'')}if(!v||!/^\d+(\.\d+)?$/.test(v)||!Number.isFinite(Number(v)))throw Error(`${label}: introduce un número no negativo válido.`);return Number(v)}
-function cents(amount){return Math.round((amount+Number.EPSILON)*100)}
-function read(){const d={};for(const k of keys)d[k]=form.elements.namedItem(k).value;return d}
-function calculate(d){const get=(key,label)=>num(d[key],label);get('superficie_m2','Superficie');get('pem','PEM');const part=get('participacion','Participación');const iva=get('iva','IVA'),ret=get('retencion','Retención');if(part>100||iva>100||ret>100)throw Error('La participación, el IVA y la retención no pueden superar el 100 %.');const factor=part/100;const bi=get('base_intervencion','Intervención')*factor,bc=get('base_calidad','Calidad')*factor,bs=get('base_seguridad','Seguridad y salud')*factor;const base=bi+bc+bs,ivaC=cents(base*iva/100),retC=cents(base*ret/100),baseC=cents(base),gastos=cents(get('gastos_colegiales','Gastos colegiales')),rc=cents(get('prima_rc','Prima RC'));return {baseC,ivaC,retC,gastos,rc,totalC:baseC+ivaC-retC+gastos+rc};}
-function show(r){const lines=[['Base honorarios',r.baseC],['IVA',r.ivaC],['Retención',-r.retC],['Gastos colegiales',r.gastos],['Prima RC',r.rc]];const box=document.getElementById('breakdown');box.replaceChildren();for(const [label,value] of lines){const div=document.createElement('div');div.className='line';const a=document.createElement('span');a.textContent=label;const b=document.createElement('b');b.textContent=fmt.format(value/100);div.append(a,b);box.appendChild(div)}document.getElementById('total').textContent=fmt.format(r.totalC/100);result.hidden=false;result.scrollIntoView({behavior:'smooth',block:'start'});}
-form.addEventListener('submit',e=>{e.preventDefault();try{show(calculate(read()));message.textContent=''}catch(err){result.hidden=true;message.textContent=err.message;message.scrollIntoView({behavior:'smooth'})}});
-document.getElementById('save').addEventListener('click',()=>{try{localStorage.setItem('calculhon-datos-v1',JSON.stringify(read()));message.textContent='Datos guardados en este navegador.'}catch(err){message.textContent='No se han podido guardar los datos: '+err.message}});
-document.getElementById('load').addEventListener('click',()=>{try{const data=JSON.parse(localStorage.getItem('calculhon-datos-v1')||'null');if(!data){message.textContent='Todavía no hay datos guardados.';return}for(const k of keys)if(typeof data[k]==='string')form.elements.namedItem(k).value=data[k];message.textContent='Datos recuperados.'}catch(err){message.textContent='No se han podido recuperar los datos.'}});
-if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
+function option(select,codes){for(const x of codes){let el=document.createElement('option');el.value=x.code;el.textContent=x.code+' · '+x.label;select.appendChild(el)}}
+option(document.getElementById('H14'),MODELO.intervenciones);option(document.getElementById('H15'),MODELO.obras);
+document.getElementById('H14').value='14';document.getElementById('H15').value='11';
+const euro=new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'});
+document.getElementById('datos').addEventListener('submit',e=>{
+ e.preventDefault();const inputs={};for(const el of e.target.querySelectorAll('input,select')){if(!el.id)continue;inputs[el.id]=['H9','H16'].includes(el.id)?el.value:Number(el.value)}
+ if(!Number.isFinite(inputs.H17)||inputs.H17<=0||!Number.isFinite(inputs.H18)||inputs.H18<=0||!Number.isFinite(inputs.H13)||inputs.H13<=0||!Number.isFinite(inputs.H22)||inputs.H22<=0){alert('Introduce PEM, superficie, factor de actualización y participación con valores mayores que cero.');return;}
+ inputs.H22/=100;
+ const engine=new Engine(MODELO,inputs),out=document.getElementById('resultados');out.replaceChildren();
+ const serv=inputs.H14;
+ // Las partidas del libro no pueden sumarse automáticamente: se presentan como salidas independientes.
+ const lines=[
+  {label:'Honorarios de Dirección (DEM)',cell:'F32',show:true},
+  {label:'Honorarios de Control de Calidad',cell:'F37',show:true},
+  {label:'Honorarios de Seguridad y Salud',cell:'F49',show:inputs.F42>0},
+  {label:'Honorarios de demoliciones (F58)',cell:'F58',show:inputs.E53>0}
+ ];
+ for(const x of lines){if(!x.show)continue;const r=document.createElement('div');r.className='result';const name=document.createElement('strong');name.textContent=x.label;const value=document.createElement('span');
+  try{const v=engine.get(x.cell);if(typeof v==='number'&&Number.isFinite(v)){value.textContent=euro.format(v);value.title='Resultado experimental, no contrastado con Excel';}else{value.textContent=String(v).trim()||'No aplicable'}}
+  catch(err){value.textContent='NO CALCULABLE: '+err.message;r.classList.add('error')}
+  r.append(name,value);out.append(r);
+ }
+ document.getElementById('aviso').textContent='Auditoría de 1.530 combinaciones teóricas (51 intervenciones × 30 obras distintas): 228 errores de referencia en F32. Resultados experimentales del modelo histórico. Una cifra numérica no demuestra concordancia con Excel. No sumar salidas alternativas ni utilizar para presupuestar o facturar. Se mantienen bloqueadas las referencias rotas del archivo original.';
+ document.getElementById('salida').hidden=false;document.getElementById('salida').scrollIntoView({behavior:'smooth'});
+});
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));

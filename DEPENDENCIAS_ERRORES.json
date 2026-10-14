@@ -1,0 +1,31 @@
+{
+  "N32": {
+    "formula": "=IF(AND(OR(H15=91,H15=92,H15=93),E53<1),\"Ver Derribo\",IF(AND(H15>70,H15<77),#REF!,IF(O32>0,O32,IF(AND(H14<34,H14>30),\"20% Dirección\",IF(AND(OR(H14=11,H14=15,H14=12,H14=13,H14=16),H15=11),R32*H22,IF(AND(OR(H14=11,H14=12,H14=13,H14=15,H14=16),OR(H15=21,H15=31)),P32*H22,IF(H14<10,Y32,Y32*H22)))))))",
+    "dependientes": [
+      "F32",
+      "F33",
+      "H32",
+      "H33",
+      "K32"
+    ]
+  },
+  "N212": {
+    "formula": "=#REF!*0.16",
+    "dependientes": [
+      "P212",
+      "P216"
+    ]
+  },
+  "P212": {
+    "formula": "=#REF!+N212",
+    "dependientes": [
+      "P216"
+    ]
+  },
+  "P214": {
+    "formula": "=#REF!",
+    "dependientes": [
+      "P216"
+    ]
+  }
+}

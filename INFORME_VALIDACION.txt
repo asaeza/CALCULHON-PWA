@@ -1,0 +1,34 @@
+CALCULHON — INFORME DE AUDITORÍA AMPLIADA (14/10/2026)
+
+ESTADO: PROTOTIPO EXPERIMENTAL. PROHIBIDO USAR PARA PRESUPUESTAR O FACTURAR SIN VALIDACIÓN.
+FUENTE: CALCULHON.xlsx de usuario y motor JavaScript del prototipo v0.3.
+
+1. COBERTURA DE RAMAS, NO EQUIVALENCIA NUMÉRICA
+Códigos de intervención únicos: 51. Tipos de obra únicos: 30.
+Total de combinaciones: 1530 (PEM=150.000 €, superficie=150 m², participación 100 %, S/S=3, sin demolición).
+No incluye variaciones continuas de PEM/superficie ni todos los escenarios de seguridad y salud.
+
+2. RESULTADOS POR CELDA
+F32: numéricos=888; textos=414; errores=228.
+F37: numéricos=36; textos=1494; errores=0.
+F49: numéricos=1377; textos=153; errores=0.
+F58: numéricos=0; textos=1530; errores=0.
+
+F32: 228 combinaciones fallan con referencia #REF! heredada del archivo Excel; 888 devuelven un número NO VALIDADO; 414 devuelven un texto.
+Los resultados numéricos no se han contrastado con resultados válidos de Excel y no pueden considerarse honorarios certificados.
+
+3. ERRORES EXISTENTES EN EL LIBRO
+N32, N212, P212, P214 contienen #REF! en el XLSX original. No se ha inferido ni sustituido ninguna referencia.
+El XLSX conserva resultados cacheados para el estado inicial (con entradas sin rellenar): F32='Ver Hon.Seg.', F37='No Aplicable', F49=' ', F58='No aplicable'. Esos valores NO permiten validar cálculos económicos con PEM y superficie reales.
+
+4. PRESENTACIÓN AJUSTADA
+La interfaz v0.4 solo muestra F49 si el usuario selecciona una modalidad S/S. F37 queda descrita como salida condicional del libro, puesto que su significado para cada intervención requiere confirmar.
+
+5. PENDIENTES
+- Obtener casos resueltos en Excel con datos de entrada y resultados para contrastar cuantías.
+- Recuperar fórmulas o referencias válidas para N32, N212, P212 y P214.
+- Comprobar supuestos de mínimos, coeficientes, escala monetaria y aplicabilidad por intervención.
+- Pruebas de instalación/desconexión PWA en un Android real.
+- Si se va a utilizar profesionalmente, separar las fórmulas históricas de cualquier recomendación actual de honorarios.
+
+NO SUSTITUIR EN GITHUB LA VERSIÓN PUBLICADA EN PRODUCCIÓN.
