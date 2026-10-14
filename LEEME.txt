@@ -1,4 +1,2 @@
-CALCULHON Honorarios v0.8
-Cambios exclusivamente de denominaciones solicitadas en botón y resultados. Las fórmulas y reglas de cálculo no se han modificado.
-Versión en revisión: los cálculos todavía no están validados frente al libro original.
-Para GitHub Pages, cargar el contenido de esta carpeta en la raíz del repositorio; una vez publicado, recargar la página para actualizar la caché de la PWA.
+CALCULHON v0.9
+Cliente y obra opcionales. No se piden datos del técnico. Para crear PDF, pulsa Generar presupuesto en PDF y elige Guardar como PDF en el diálogo de impresión del navegador. Historial guardado en localStorage, no sincronizado ni exportado. Solo se suman las partidas que el usuario marca explícitamente. Las fórmulas proceden de la v0.8.1, sin cambios. Su validación sigue limitada a los casos contrastados.

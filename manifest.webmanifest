@@ -1,1 +1,25 @@
-{"name": "CALCULHON · Honorarios (experimental)", "short_name": "CALCULHON", "description": "Calculadora experimental basada en fórmulas históricas; resultados sin validar.", "start_url": "./", "scope": "./", "display": "standalone", "background_color": "#f4f6f8", "theme_color": "#214a42", "lang": "es", "icons": [{"src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"}, {"src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}]}
+{
+  "name": "CALCULHON · Honorarios profesionales",
+  "short_name": "CALCULHON",
+  "description": "Calculadora de honorarios con historial local y presupuestos imprimibles en PDF",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f8",
+  "theme_color": "#214a42",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
